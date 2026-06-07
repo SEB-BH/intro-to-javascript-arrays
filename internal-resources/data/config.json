@@ -1,0 +1,247 @@
+{
+  "org": {
+    "friendlyName": "Modular Curriculum All Courses",
+    "name": "modular-curriculum-all-courses"
+  },
+  "repo": {
+    "friendlyName": "Intro to JavaScript Arrays",
+    "name": "intro-to-javascript-arrays",
+    "type": "Lesson"
+  },
+  "courses": [
+    {
+      "name": "fallback",
+      "logoUrl": "",
+      "microlessons": [
+        {
+          "friendlyName": "Setup",
+          "dirName": "setup",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Concepts",
+          "dirName": "concepts",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Fundamentals",
+          "dirName": "fundamentals",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Reading",
+          "dirName": "reading",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Manipulation",
+          "dirName": "manipulation",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Iteration",
+          "dirName": "iteration",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " forEach() ",
+          "dirName": "forEach",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " join() ",
+          "dirName": "join",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "You Do",
+          "dirName": "you-do",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " at() ",
+          "dirName": "at",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " shift()  and  unshift() ",
+          "dirName": "shift-unshift",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Expanding on  forEach() ",
+          "dirName": "expanding-on-forEach",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " break  and  continue ",
+          "dirName": "break-and-continue",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Copying Arrays",
+          "dirName": "copying-arrays",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Shallow vs Deep Copies of Arrays",
+          "dirName": "shallow-vs-deep",
+          "type": "Content",
+          "videoUrl": ""
+        }
+      ],
+      "isHeaderShown": true,
+      "isHeaderModuleNavShown": true,
+      "isHeaderHomeNavShown": true,
+      "isHeaderMicrolessonNavShown": true,
+      "isHeaderMicrolessonVideoLinkShown": true,
+      "isHeaderNavSettingsShown": true,
+      "isFooterCopyrightShown": true,
+      "isFooterLessonNavShown": true,
+      "isStickyNavSettingShown": true,
+      "isStickyNavAllowed": true,
+      "isFixedNavAllowed": true,
+      "isStickyNavDefault": true,
+      "isStickyNavForcedDefault": false,
+      "isFixedNavForcedDefault": false,
+      "isDarkModeSettingShown": true,
+      "isDarkModeAllowed": true,
+      "isLightModeAllowed": true,
+      "isLightModeDefault": true,
+      "isLightModeForcedDefault": false,
+      "isDarkModeForcedDefault": false,
+      "isActivityTimeShown": true
+    },
+    {
+      "name": "seb",
+      "logoUrl": "",
+      "microlessons": [
+        {
+          "friendlyName": "Setup",
+          "dirName": "setup",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Concepts",
+          "dirName": "concepts",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Fundamentals",
+          "dirName": "fundamentals",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Reading",
+          "dirName": "reading",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Manipulation",
+          "dirName": "manipulation",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Iteration",
+          "dirName": "iteration",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " forEach() ",
+          "dirName": "forEach",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " join() ",
+          "dirName": "join",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "You Do",
+          "dirName": "you-do",
+          "type": "Content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " at() ",
+          "dirName": "at",
+          "type": "Level Up content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " shift()  and  unshift() ",
+          "dirName": "shift-unshift",
+          "type": "Level Up content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Expanding on  forEach() ",
+          "dirName": "expanding-on-forEach",
+          "type": "Level Up content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": " break  and  continue ",
+          "dirName": "break-and-continue",
+          "type": "Level Up content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Copying Arrays",
+          "dirName": "copying-arrays",
+          "type": "Level Up content",
+          "videoUrl": ""
+        },
+        {
+          "friendlyName": "Shallow vs Deep Copies of Arrays",
+          "dirName": "shallow-vs-deep",
+          "type": "Level Up content",
+          "videoUrl": ""
+        }
+      ],
+      "isHeaderShown": true,
+      "isHeaderModuleNavShown": true,
+      "isHeaderHomeNavShown": true,
+      "isHeaderMicrolessonNavShown": true,
+      "isHeaderMicrolessonVideoLinkShown": true,
+      "isHeaderNavSettingsShown": true,
+      "isFooterCopyrightShown": true,
+      "isFooterLessonNavShown": true,
+      "isStickyNavSettingShown": true,
+      "isStickyNavAllowed": true,
+      "isFixedNavAllowed": true,
+      "isStickyNavDefault": true,
+      "isStickyNavForcedDefault": false,
+      "isFixedNavForcedDefault": false,
+      "isDarkModeSettingShown": true,
+      "isDarkModeAllowed": true,
+      "isLightModeAllowed": true,
+      "isLightModeDefault": true,
+      "isLightModeForcedDefault": false,
+      "isDarkModeForcedDefault": false,
+      "isActivityTimeShown": true
+    }
+  ]
+}
