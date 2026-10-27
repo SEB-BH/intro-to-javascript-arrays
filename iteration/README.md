@@ -12,7 +12,7 @@
 A standard `for` loop can iterate through an array. Initialize the loop with `idx` set to `0` - the index of the first element. End iteration at the index of the last element:
 
 ```js
-// as a reminder, movies is ['Barbie', 'Arrival', 'Get Out', 'Coco']
+// as a reminder, movies is ['Barbie', 'Arrival', 'Harry Potter', 'Dune', 'The Dark Knight']
 
 for (let idx = 0; idx < movies.length; idx++) {
   console.log(movies[idx]);
@@ -23,13 +23,14 @@ Inside the loop, `idx` serves as the index to retrieve elements from the `movies
 
 We use the `length` property of `movies` to ensure that this loop is dynamic to the size of the array - as elements are added or removed, this same loop will still function.
 
-For our `['Barbie', 'Arrival', 'Get Out', 'Coco']` array, this will result in the following output:
+For our `['Barbie', 'Arrival', 'Harry Potter', 'Dune', 'The Dark Knight']` array, this will result in the following output:
 
 ```text
 Barbie
 Arrival
-Get Out
-Coco
+Harry Potter
+Dune
+The Dark Knight
 ```
 
 This loop doesn't do much, but we could do anything we want to inside the `for` loop. Let's number each item.
@@ -45,33 +46,10 @@ For the same array, this will be the result:
 ```text
 1. Barbie
 2. Arrival
-3. Get Out
-4. Coco
+3. Harry Potter
+4. Dune
+5. The Dark Knight
 ```
 
-## Using a `for...of` loop
 
-The traditional `for` statement can be used to iterate over an array in an *imperative* way - meaning we provide each step the computer should take to carry out an action. The [`for...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) statement is a *declarative* approach that provides a more concise way to iterate over arrays (and other iterable structures like strings):
-
-```js
-for (let movie of movies) {
-  console.log(movie);
-}
-```
-
-And here's the result:
-
-```text
-Barbie
-Arrival
-Get Out
-Coco
-```
-
-> 📚 When using *imperative* programming, you instruct the computer how to achieve a specific outcome step by step. When using *declarative* programming, you tell the computer the desired outcome, omitting the finer details. A mnemonic may be helpful to remember this:
-> - ***I***mperative programming requires ***i***nstructions to carry out a task.
-> - ***D***eclarative programming is a ***d***ecree unconcerned with how the result happens, just that it does.
-
-A `for...of` loop has couple of extra unique features in addition to this more declarative approach.
-
-> ⚠️ JavaScript also provides a `for...in` loop. It's designed mainly for iterating over an object's properties rather than array items. Be sure you're using the correct loop for your needs.
+> ⚠️ JavaScript also provides a `for...in` loop. It's designed mainly for iterating over an object's properties rather than array items. Be sure you're using the correct loop for your needs. A `for...of` loop also exists and has a couple of extra unique features in addition to this more declarative approach.
