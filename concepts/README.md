@@ -3,28 +3,71 @@
   <span class="subhead">Concepts</span>
 </h1>
 
-**Learning Objective:** By the end of this lesson, the learner will be able to explain the fundamental properties of arrays in JavaScript, including their dynamic size, versatility in holding various data types, and their role as an ordered collection for storing multiple values.
+**Learning objective:** By the end of this lesson, students will be able to explain an array as an ordered list of values.
 
-## What are arrays?
+## Start with a list
 
-Think of arrays in JavaScript like a bookshelf full of books. Each book on the shelf is an element of the array. Books placed on it have an order - there is a first and last book, and every book between has a specific location on the shelf.
+Imagine a training centre which offers three courses: HTML, CSS, and JavaScript.
 
-[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) can contain zero or more items called *elements* (not to be confused with HTML elements). These elements are stored in a specific order. 
+We could store each course in a separate variable:
 
-Each element in an array can hold any data type - strings, numbers, objects, functions, or even other arrays. This sets JavaScript apart from many other programming languages. However, just because you can doesn't necessarily mean that you should - as we work with arrays, we will typically want them to contain a single type of data.
+```js
+const firstCourse = 'HTML';
+const secondCourse = 'CSS';
+const thirdCourse = 'JavaScript';
+```
 
-In JavaScript, arrays can grow and shrink in size dynamically. You can add to them without being concerned about their capacity.
+This becomes difficult when the centre offers 30 courses. We need one place to keep the list.
 
-Although it's common to refer to an array as its own data type, they are technically a subtype of the `Object` type. This means arrays are technically objects in JavaScript.
+An **array** stores a list of values under one variable name:
 
-> 📚 An *element* in an array is an individual item stored at a specific position within an array. 
+```js
+const courses = ['HTML', 'CSS', 'JavaScript'];
 
-## Why use arrays?
+console.log(courses);
+```
 
-Arrays are typically the data structure of choice for holding an ordered list of data. Imagine you wanted to record the high temperature in your location every day for a year. Without arrays, you would need to create a separate variable for every new piece of data. Instead we can store all that temperature data in a single container because we have arrays.
+> 📚 An **array** is an _ordered_ list of values. Each value in the list is called an **element** or **item**.
 
-Collecting that data in a single container has other benefits. Because all the high-temperature data you've collected is held in one place, it's easier to carry out operations on that data. For example, finding the average high temperature or even the hottest or coldest day of the year.
+Here, `'HTML'` is one element. `'CSS'` is another. The array contains three elements.
 
-As demonstrated by the example above, the real-world problems you'll solve often involve collections of things. Arrays provide a natural way to model those collections in code.
+## Order matters
 
-> 📚 An *array* is a collection of elements stored in a specific order. Think of an array as a list or a container holding multiple values.
+The first course in this list is HTML. The second is CSS. The third is JavaScript.
+
+| Position in our list | Value |
+| --- | --- |
+| First | `'HTML'` |
+| Second | `'CSS'` |
+| Third | `'JavaScript'` |
+
+An array keeps this order until our code changes it. It does not sort the values automatically.
+
+An array can contain duplicate values. For example, a list of customer orders might contain `'Notebook'` more than once.
+
+## Why developers use arrays
+
+Arrays can store products in a shopping basket, temperatures recorded in a city, completed tasks, or available choices in a game.
+
+Keeping related values together lets us read one item, add an item, check the list, or repeat an action for every item.
+
+JavaScript arrays can grow and shrink. They can also start empty.
+
+## Values inside arrays
+
+An array can contain strings, numbers, booleans, or other arrays. Later, we will also use arrays containing objects.
+
+For now, we will usually keep one kind of value in each list, though it is possible to mix data types in an array in JavaScript.
+
+> 💡 An **array element** is an item in a list. This is a different use of the word “element” from an HTML element such as `<p>`.
+
+## 🎓 You Do
+
+Without writing code yet:
+
+1. Write a list of three things a delivery app needs to track.
+2. Choose one kind of thing from your list, such as delivery locations.
+3. Write three example values for that array.
+4. Explain to a partner why keeping those values in one list could help a developer.
+
+Read more: [MDN — Arrays for beginners](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Arrays).
