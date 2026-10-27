@@ -10,11 +10,11 @@
 Just like we access elements in an array using square bracket notation, we can also use this same syntax to update an element in a specific position:
 
 ```js
-// recall that movies is ['Barbie', 'Interstellar', 'Get Out']
+// recall that movies is ['Barbie', 'Interstellar', 'Harry Potter']
 
 // let's update the 2nd movie (index of 1)
 movies[1] = 'Arrival';
-// movies is now ['Barbie', 'Arrival', 'Get Out']
+// movies is now ['Barbie', 'Arrival', 'Harry Potter']
 ```
 
 Wait though, wasn't `movies` defined using `const`? How are we able to modify its contents? 
@@ -25,7 +25,7 @@ When we made `movies`, we told JavaScript not to let us change what `movies` poi
 // attempting to change the movies constant to a string
 movies = 'Barbie and Arrival';
 // attempting to change the movies constant to a different array (even if the contents of that array are identical)
-movies = ['Barbie', 'Arrival', 'Get Out'];
+movies = ['Barbie', 'Arrival', 'Harry Potter'];
 ```
 
 But when we change the contents of the existing array, everything checks out fine!
@@ -42,7 +42,7 @@ We can add one or more elements to the **end** of an array using the [`push()`](
 
 ```js
 movies.push('Parasite', 'Dune');
-// movies is ['Barbie', 'Arrival', 'Get Out', 'Parasite', 'Dune']
+// movies is ['Barbie', 'Arrival', 'Harry Potter', 'Parasite', 'Dune']
 ```
 
 Imagine a stack of books on a table. The `push()` method is like adding a book or books to the top of the stack. 
@@ -53,14 +53,14 @@ We can remove a single element from the **end** of an array using the [`pop()`](
 
 ```js
 movies.pop();
-// movies is ['Barbie', 'Arrival', 'Get Out', 'Parasite"]
+// movies is ['Barbie', 'Arrival', 'Harry Potter', 'Parasite"]
 ```
 
 `pop()` doesn’t take any arguments and returns the element that was removed from the array:
 
 ```js
 const removedMovie = movies.pop();
-// movies is ['Barbie', 'Arrival', 'Get Out']
+// movies is ['Barbie', 'Arrival', 'Harry Potter']
 // removedMovie is 'Parasite'
 ```
 
