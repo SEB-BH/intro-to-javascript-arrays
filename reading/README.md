@@ -10,7 +10,7 @@
 Array elements are accessed using square bracket notation along with the element's __index__ (position) within the array.
 
 ```js
-const movies = ['Barbie', 'Interstellar', 'Get Out'];
+const movies = ['Barbie', 'Interstellar', 'Harry Potter'];
 
 const firstMovie = movies[0];
 // firstMovie is 'Barbie'
@@ -39,10 +39,10 @@ To access the last element of an array, you can utilize the `length` property.
 
 ```js
 const lastMovie = movies[movies.length - 1];
-// lastMovie is 'Get Out'
+// lastMovie is 'Harry Potter'
 ```
 
-This works because the code `movies.length - 1` will resolve to the number 2, and the item held in the 2 index of the `movies` array is `'Get Out'`.
+This works because the code `movies.length - 1` will resolve to the number 2, and the item held in the 2 index of the `movies` array is `'Harry Potter'`.
 
 > ❓ Assuming the below code, what will the value of the variable `color` be?
 >
