@@ -64,7 +64,7 @@ console.log(tasks);
 const newLength = movies.push('Dune', 'The Dark Knight');
 
 console.log(newLength); // 5
-console.log(tasks.length); // 5
+console.log(movies.length); // 5
 ```
 
 > 🧠 Use `tasks.push('New task');` to update the list. Do not accidentally replace your array variable with the result of `push()`; that result is a number.
