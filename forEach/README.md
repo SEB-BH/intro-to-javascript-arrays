@@ -36,7 +36,7 @@ This is the most basic syntax for using the `forEach()` method on the `movies` a
 We'll start with the simplest callback function we can:
 
 ```js
-// as a reminder, movies is ['Barbie', 'Arrival', 'Get Out', 'Coco']
+// as a reminder, movies is ['Barbie', 'Arrival', 'Harry Potter', 'Dune', 'The Dark Knight']
 
 movies.forEach((movie) => {
   console.log(movie)
@@ -52,8 +52,9 @@ This code will result in the following output:
 ```text
 Barbie
 Arrival
-Get Out
-Coco
+Harry Potter
+Dune
+The Dark Knight
 ```
 
 In addition to the current element, `forEach()` also provides the index of the current element to the callback function:
@@ -71,6 +72,7 @@ Which will result in the following output:
 Barbie
 Arrival
 This is the third movie:
-Get Out
-Coco
+Harry Potter
+Dune
+The Dark Knight
 ```
