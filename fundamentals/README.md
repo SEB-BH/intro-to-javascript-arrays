@@ -24,4 +24,4 @@ An array can hold any data inside of it (including other arrays!) and can even h
 
 Create an array named `movies` containing the titles (as strings) of three of your favorite movies.
 
-If you want your notes to match the lecture examples, use *Barbie*, *Interstellar*, and *Get Out*.
+If you want your notes to match the lecture examples, use *Barbie*, *Interstellar*, and *Harry Potter*.
