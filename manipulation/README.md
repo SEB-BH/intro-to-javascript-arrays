@@ -5,69 +5,109 @@
 
 **Learning objective:** By the end of this lesson, students will be able to update existing array elements and utilize methods like `push()` and `pop()` to add or remove elements at the start or end of an array.
 
-## Updating existing elements in an array
 
-Just like we access elements in an array using square bracket notation, we can also use this same syntax to update an element in a specific position:
-
-```js
-// recall that movies is ['Barbie', 'Interstellar', 'Harry Potter']
-
-// let's update the 2nd movie (index of 1)
-movies[1] = 'Arrival';
-// movies is now ['Barbie', 'Arrival', 'Harry Potter']
-```
-
-Wait though, wasn't `movies` defined using `const`? How are we able to modify its contents? 
-
-When we made `movies`, we told JavaScript not to let us change what `movies` points at (a specific array). It is not, however, saying that the contents of that array cannot be *mutated* (altered). In short, if we try doing something like the examples below, we'll get a `TypeError`:
+## Change an existing element
 
 ```js
-// attempting to change the movies constant to a string
-movies = 'Barbie and Arrival';
-// attempting to change the movies constant to a different array (even if the contents of that array are identical)
-movies = ['Barbie', 'Arrival', 'Harry Potter'];
+const tasks = ['Check stock', 'Send invoice', 'Book delivery'];
+
+tasks[1] = 'Email invoice';
+
+console.log(tasks);
+// ['Check stock', 'Email invoice', 'Book delivery']
 ```
 
-But when we change the contents of the existing array, everything checks out fine!
+Read `tasks[1] = 'Email invoice'` as: “Replace the value at index 1.” The other elements keep their positions. The length stays `3`.
 
-> 📚 *Mutation* is the modification of the content of a data structure or variable. This contrasts with *immutability*, where data cannot be changed once created.
+## Changing contents and replacing the array
 
-## Adding or removing elements at the start or end of an array
-
-Don't worry; we'll eventually get to adding (and removing) elements anywhere in an array!
-
-### `push()`
-
-We can add one or more elements to the **end** of an array using the [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) method:
+We declared `tasks` with `const`. That stops us assigning a different value to the variable. It still allows changes **inside the existing array**.
 
 ```js
-movies.push('Parasite', 'Dune');
-// movies is ['Barbie', 'Arrival', 'Harry Potter', 'Parasite', 'Dune']
+tasks[0] = 'Count stock'; // Allowed: change an item in the existing array.
+
+// Do not run this line:
+// tasks = ['Prepare report']; // TypeError: reassigning a const.
 ```
 
-Imagine a stack of books on a table. The `push()` method is like adding a book or books to the top of the stack. 
+Changing an existing array is called **mutation**. Assigning the variable a different array is called **reassignment**.
 
-### `pop()`
+If a program needs reassignment, declare that variable with `let`. We will use that when resetting application data later.
 
-We can remove a single element from the **end** of an array using the [`pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) method:
+## Call an array method
+
+A **method** is a function we use through a value, such as an array. The pattern is `arrayName.methodName(arguments)`.
+
+The parentheses call the method. An **argument** is information we pass into that call.
+
+### Add to the end with `push()`
 
 ```js
-movies.pop();
-// movies is ['Barbie', 'Arrival', 'Harry Potter', 'Parasite"]
+tasks.push('Prepare report');
+
+console.log(tasks);
+// ['Count stock', 'Email invoice', 'Book delivery', 'Prepare report']
 ```
 
-`pop()` doesn’t take any arguments and returns the element that was removed from the array:
+`push()` changes the array by adding an element to the end. It can also add several elements in one call:
 
 ```js
-const removedMovie = movies.pop();
-// movies is ['Barbie', 'Arrival', 'Harry Potter']
-// removedMovie is 'Parasite'
+tasks.push('Review budget', 'Update calendar');
+
+console.log(tasks);
+// ['Count stock', 'Email invoice', 'Book delivery', 'Prepare report', 'Review budget', 'Update calendar']
 ```
 
-`pop()` is like removing a single book from the top of the stack of books. It also allows us to do something with the book we removed if we want.
+`push()` **returns** the new length. A return value is a value a method gives back to our code. The return value is separate from the change to the array.
 
-### You Do
+```js
+const newLength = movies.push('Dune', 'The Dark Knight');
 
-Add a movie of your choice to the end of the array!
+console.log(newLength); // 5
+console.log(tasks.length); // 5
+```
 
-Can't think of a movie? If you need a suggestion, I'll be adding **Coco**.
+> 🧠 Use `tasks.push('New task');` to update the list. Do not accidentally replace your array variable with the result of `push()`; that result is a number.
+
+### Remove from the end with `pop()`
+
+```js
+const removedTask = tasks.pop();
+
+console.log(removedTask); // Update calendar
+console.log(tasks);
+// ['Count stock', 'Email invoice', 'Book delivery', 'Prepare report', 'Review budget']
+```
+
+`pop()` removes one element from the end and returns the removed value. It takes no arguments.
+
+```js
+const noTasks = [];
+const removedFromEmpty = noTasks.pop();
+
+console.log(removedFromEmpty); // undefined
+console.log(noTasks); // []
+```
+
+## Choose the right action
+
+| Goal | Code | Does the length change? |
+| --- | --- | --- |
+| Replace an existing value | `tasks[1] = 'Check invoice';` | No |
+| Add to the end | `tasks.push('Check invoice');` | Yes |
+| Remove from the end | `tasks.pop();` | Yes, unless already empty |
+
+Use existing indexes when updating a position. Writing to a far-away index, such as `tasks[20]`, can leave gaps in the array. Use `push()` when you mean “add to the end.”
+
+
+## 🎓 You Do
+
+1. Create `const books = [];`.
+2. Add `'Learning JavaScript'` and `'Web Design Basics'` with one `push()` call.
+3. Log the second book.
+4. Replace the second book with `'Accessible Websites'`.
+5. Add `'Working with Data'`.
+6. Use `pop()` and save its return value in `removedBook`.
+7. Log `books`, `removedBook`, and `books.length`.
+
+Your final array should contain two books: `'Learning JavaScript'` and `'Accessible Websites'`.
