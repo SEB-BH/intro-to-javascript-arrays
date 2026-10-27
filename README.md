@@ -22,9 +22,9 @@ This JavaScript Arrays module is designed to provide a comprehensive introductio
 | [You Do](./you-do/README.md)                                     | Practice creating, modifying, and iterating through an array of strings.                                  |
 
 
-## Applying Arrays
+## Applying Arrays (Optional)
 
-These short lessons show how to combine the core array skills to solve programming problems. They use JavaScript and the console; no DOM experience is needed.
+These short lessons show how to combine the core array skills to solve programming problems.
 
 | Lesson | Skills |
 | ------ | ------ |
@@ -35,7 +35,7 @@ These short lessons show how to combine the core array skills to solve programmi
 | [Nested Arrays](./nested-arrays/README.md) | Read arrays inside arrays and use positions to access other arrays |
 | [Build a Game Board](./game-board-practice/README.md) | Combine array skills in a console-based practice challenge |
 
-## Level Up content
+## Level Up content (Optional)
 
 | Lesson | Skills |
 | ------ | ------ |
