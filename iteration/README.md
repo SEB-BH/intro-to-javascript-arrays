@@ -51,5 +51,14 @@ For the same array, this will be the result:
 5. The Dark Knight
 ```
 
+## 🎓 You Do
+
+```js
+const stockCounts = [8, 3, 12, 1];
+```
+
+1. Use a `for` loop to log each index and its stock count.
+2. Inside that `for` loop, add an `if` statement. Log `'Low stock'` for counts below `5`.
+3. Use `push()` to add another element (for example, `10`) **before the loops**. Run the code again without changing either loop and observe the results.
 
 > ⚠️ JavaScript also provides a `for...in` loop. It's designed mainly for iterating over an object's properties rather than array items. Be sure you're using the correct loop for your needs. A `for...of` loop also exists and has a couple of extra unique features in addition to this more declarative approach.
