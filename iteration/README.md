@@ -3,7 +3,7 @@
   <span class="subhead">Iteration</span>
 </h1>
 
-**Learning objective:** By the end of this lesson, students will be able to use both `for` and `for...of` loops to iterate through arrays and manipulate each element.
+**Learning objective:** By the end of this lesson, students will be able to use a `for` loop to iterate through arrays and manipulate each element.
 
 > 📚 *Iteration* is the process of repeatedly executing a set of instructions or looping through a collection of items (like an array or string) one by one until a specific condition is met or until no more items are left to process.
 
