@@ -8,14 +8,15 @@
 The array [`join()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join) method combines all of the string elements in an array and returns a single string:
 
 ```js
-// as a reminder, movies is ['Barbie', 'Arrival', 'Get Out', 'Coco']
+// as a reminder, movies is ['Barbie', 'Arrival', 'Harry Potter', 'Dune', 'The Dark Knight']
+
 let movieString = movies.join();
-// movieString is 'Barbie,Arrival,Get Out,Coco'
+// movieString is 'Barbie,Arrival,Harry Potter,Dune,The Dark Knight'
 ```
 	
 As you can see, by default, the movie strings were separated by a comma. However, we can pass `join()` whatever string we want to use as the separator:
 
 ```js
 movieString = movies.join(' -- ');
-// movieString is 'Barbie -- Arrival -- Get Out -- Coco'
+// movieString is 'Barbie -- Arrival -- Harry Potter -- Dune -- The Dark Knight'
 ```
