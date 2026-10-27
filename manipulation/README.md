@@ -17,7 +17,6 @@ console.log(tasks);
 // ['Check stock', 'Email invoice', 'Book delivery']
 ```
 
-Read `tasks[1] = 'Email invoice'` as: “Replace the value at index 1.” The other elements keep their positions. The length stays `3`.
 
 ## Changing contents and replacing the array
 
