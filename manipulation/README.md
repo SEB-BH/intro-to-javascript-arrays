@@ -16,7 +16,7 @@ tasks[1] = 'Email invoice';
 console.log(tasks);
 // ['Check stock', 'Email invoice', 'Book delivery']
 ```
-
+We can use an index value and the assignment operator to replace the value at index 1. The other elements keep their positions. The length stays 3.
 
 ## Changing contents and replacing the array
 
