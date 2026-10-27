@@ -25,8 +25,7 @@ We declared `tasks` with `const`. That stops us assigning a different value to t
 ```js
 tasks[0] = 'Count stock'; // Allowed: change an item in the existing array.
 
-// Do not run this line:
-// tasks = ['Prepare report']; // TypeError: reassigning a const.
+tasks = ['Prepare report']; // TypeError: reassigning a const.
 ```
 
 Changing an existing array is called **mutation**. Assigning the variable a different array is called **reassignment**.
